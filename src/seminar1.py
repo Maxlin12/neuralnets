@@ -38,6 +38,7 @@ def inplace_operation(a: np.array, b: np.array) -> None:
     np.divide(-a, 2, out=a)
     np.multiply(a, b, out=a)
 
+
 def get_elements(a: np.array, indices: np.array) -> np.array:
     """
     Given 2D matrix of elements and 1D array of indexes.
@@ -64,4 +65,4 @@ def self_inners(a: np.array) -> np.array:
     :param a:
     :return: 2D array of inners product shape=(m, m)
     """
-    return a@a.T
+    return a @ a.T
